@@ -290,11 +290,12 @@
 
     /* Banner */
     .video-overlay h1{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 
     .video-overlay p{
         font-size: 0.8rem;
+        margin: 0px 63px 28px;
     }
 
 
@@ -326,6 +327,12 @@
 
     .room-items .room-content p{
         font-size: 0.7rem;
+    }
+
+    /* Service */
+    .services_wrapper{
+        position: relative;
+        bottom: 103px;
     }
 
     /* Footer */
