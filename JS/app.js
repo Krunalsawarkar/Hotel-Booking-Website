@@ -18,6 +18,22 @@ navBar.forEach(function(a){
     })
 })
 
+
+//checkin checkout date Starts Here
+function changeIt(){
+const checkindate = document.getElementById("checkinDate").value;
+
+const checkoutDate = document.getElementById("checkoutDate").value;
+if(checkindate >= checkoutDate){
+    alert("select valid date");
+     document.getElementById("checkoutDate").value ="";
+     document.getElementById("checkinDate").value ="";   
+}
+}
+//checkin checkout date Ends Here
+
+
+
 // Counter 
 document.addEventListener("DOMContentLoaded", () => {
     function counter(id, start, end, duration) {
@@ -39,6 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     counter("count3", 0, 1440, 3000);
     counter("count4", 0, 7110, 3000);
 });
+
 
 // Brand Swiper
 var swiper = new Swiper(".our-partner", {
@@ -63,12 +80,3 @@ var swiper = new Swiper(".our-partner", {
         },
     },
 });
-
-// date picker
-var field = document.getElementById('date-input');
-var picker = new Pikaday({
-    onSelect: function(date) {
-        field.value = picker.toString('YYYY-MM-DD');
-    }
-});
-field.parentNode.insertBefore(picker.el, field.nextSibling);
