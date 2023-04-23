@@ -21,7 +21,8 @@
     <!-- Swiper CDN -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -102,10 +103,11 @@
             <div class="container booking-area">
                 <form class="row">
                     <div class="col-lg mb-3 mb-lg-0">
-                        <input type="date" class="form-control" placeholder="Date">
+                        <input type="date" placeholder="MM/DD/YYYY"
+                        onfocus="(this.type='date')" id="date-input" class="form-control">
                     </div>
                     <div class="col-lg mb-3 mb-lg-0">
-                        <input type="date" class="form-control" placeholder="Date">
+                        <input type="date" id="date-input" class="form-control">
                     </div>
                     <div class="col-lg mb-3 mb-lg-0">
                         <select class="form-select">

@@ -61,7 +61,14 @@ var swiper = new Swiper(".our-partner", {
             slidesPerView: 2,
             spaceBetween: 8,
         },
-
-
     },
 });
+
+// date picker
+var field = document.getElementById('date-input');
+var picker = new Pikaday({
+    onSelect: function(date) {
+        field.value = picker.toString('YYYY-MM-DD');
+    }
+});
+field.parentNode.insertBefore(picker.el, field.nextSibling);
