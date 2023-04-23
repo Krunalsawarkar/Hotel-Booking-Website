@@ -103,10 +103,10 @@
             <div class="container booking-area">
                 <form class="row">
                     <div class="col-lg mb-3 mb-lg-0">
-                        <input type="date" id="checkinDate" class="form-control" placeholder="Select check-in date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                        <input type="text" onfocus="(this.type = 'date')" id="checkinDate" class="form-control" placeholder="Check-in date">
                     </div>
                     <div class="col-lg mb-3 mb-lg-0">
-                        <input type="date" onchange="changeIt()"id="checkoutDate"  class="form-control" placeholder="Select check-out date" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+                        <input type="text" onfocus="(this.type = 'date')" onchange="changeIt()"id="checkoutDate"  class="form-control" placeholder="Check-out date">
                     </div>
                     <div class="col-lg mb-3 mb-lg-0">
                         <select class="form-select">
