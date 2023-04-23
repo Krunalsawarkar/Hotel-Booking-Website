@@ -1,0 +1,347 @@
+@media (max-width : 1199px) {
+
+    /* Navbar */
+
+    .header_wrapper .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+
+    .header_wrapper .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0;
+        font-size: 0.875rem;
+    }
+
+    /* Banner */
+
+    .video-overlay h1{
+        font-size: 5rem;
+    }
+
+    .video-overlay p{
+        font-size: 1.2rem;
+        margin-top: 0;
+    }
+
+    .button-wrapper .main-btn {
+        font-size: 0.956rem;
+    }
+    
+   
+    .booking-container{
+        position: relative;
+        top: -24%;
+    }
+
+    .booking-container .booking-area{
+        padding: 3rem 0.625rem;
+        margin-top: 4px;
+    }
+    .booking-area .main-btn{
+        font-size: 0.9rem;
+        padding-left: 0.312rem !important;
+        padding-right: 0.312rem !important;
+        white-space: nowrap;
+    }
+    /* About */
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-top: 23px;
+    }
+
+
+    /* Rooms */
+    .room-items .room-content{
+        padding: 1rem 1.875;
+    }
+
+    .room-items .room-content h5{
+        font-size: 1.2rem;
+    }
+
+    .room-items .room-content p{
+        font-size: 0.75rem;
+    }
+
+    /* Service */
+    .service-item-wrap .tab-content img{
+        width: 100%;
+    }
+    .service-menu-area ul li{
+        margin-bottom: -18px; 
+    }
+
+    .service-menu-area ul li a{
+        margin-bottom: 1.8rem;
+        overflow: hidden;
+    }
+
+    .service-menu-area ul li:nth-child(1){
+        margin-left: -4.4rem;
+    }
+
+    .service-menu-area ul li:nth-child(2){
+        margin-left: -6.9rem;
+    }
+
+    .service-menu-area ul li:nth-child(3){
+        margin-left: -9.3rem;
+    }
+
+    .service-menu-area ul li:nth-child(4){
+        margin-left: -11.95rem;
+    }
+
+    .service-menu-area ul li a h5{
+        margin-bottom: 0.37rem;
+    }    
+    .service-menu-area ul li a p{
+        line-height: 18px;
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width : 991px) {
+
+    section {
+        padding: 0.6rem 0;
+    }
+
+    /* Navbar */
+    
+    .header-scrolled {
+        height: auto;
+    }
+
+    .header_wrapper .menu-navbar-nav {
+        text-align: center;
+        padding-bottom: 0.93rem;
+    }
+
+    .header_wrapper .nav-item .nav-link {
+        margin-top: 0.93rem;
+    }
+
+    /* Banner  */
+
+    .banner-wrapper{
+        height: 25.625rem;
+    }
+
+    
+    .video-overlay h1{
+        font-size: 4.5rem;
+    }
+    
+    .video-overlay p{
+        font-size: 1.15rem;
+        margin-top: 0;
+        
+    }
+    .video-overlay{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+    }
+    .video .onvideo{
+        height: 70%;
+    }
+    
+    .button-wrapper .main-btn {
+        font-size: 0.8rem;
+        padding: 0.5rem ;
+        
+    }
+    
+    .booking-container .booking-area{
+        padding:3rem 3.265rem ;
+
+    }
+
+    .booking-container{
+        position: relative;
+        top: -41%;
+    }
+    
+    /* Room  */
+    .room-items .room-content{
+        padding: 1rem 0.185rem;
+    }
+
+    .room-items .room-content h5{
+        font-size: 1rem;
+    }
+
+    .room-items .room-content p{
+        font-size: 0.75rem;
+        line-height: 0.8rem;
+    }
+
+    /* Services */
+
+    .service-menu-area {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .service-menu-area ul li{
+        margin-left: unset !important;
+    }
+
+    .counter h1{
+        font-size: 2.5rem;
+    }
+    .counter p{
+        font-size: 1.3rem;
+    }
+    .counter span{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width : 767px) {
+
+    h1 {
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.8125rem;
+        line-height: 1.5rem;
+    }
+
+    /* Banner */
+    
+    .video-overlay h1{
+        font-size: 2.5rem;
+        margin-bottom: 1px;
+        line-height: 25px;
+    }
+
+    .video-overlay p{
+        font-size: 1rem;
+       
+    }
+    .video .onvideo{
+        height: 56%;
+    }
+
+    .video-overlay{
+        top: 34%;
+    }
+
+    .button-wrapper .main-btn{
+        font-size: 0.9rem;
+    }
+    .booking-area .main-btn{
+        text-align: center;
+    }
+     
+    .booking-container{
+        position: relative;
+        top: -43%;
+    }
+
+    /* About Banner */
+    
+    .about_wrapper{
+        top: -121px;
+        position: relative;
+    }
+
+    /* Rooms */
+    .room-items .room-content{
+        padding: 1rem 0.8rem;
+    }
+
+    .room-items .room-content h5{
+        font-size: 1.2rem;
+    }
+
+    .room-items .room-content p{
+        font-size: 0.75rem;
+    }
+    
+    /* Blog */
+    .blog_wrapper .blog-content{
+        margin: 0;
+    }
+
+    /* Footer */
+    .footer_wrapper > div{
+        padding: 0 1.8rem;
+    }
+}
+
+@media (max-width : 425px){
+
+    /* Banner */
+    .video-overlay h1{
+        font-size: 1.6rem;
+    }
+
+    .video-overlay p{
+        font-size: 0.8rem;
+    }
+
+
+    /* Booking */
+    .booking-container{
+        position: relative;
+        top: -46%;
+    }
+
+    /* About */
+    .about_wrapper{
+        top: -200px;
+        position: relative;
+    }
+
+    /* Rooms */
+    .rooms_wrapper{
+        position: relative;
+        top:-180px ;
+    }
+
+    .room-items .room-content{
+        padding: 1rem 0.8rem;
+    }
+
+    .room-items .room-content h5{
+        font-size: 1rem;
+    }
+
+    .room-items .room-content p{
+        font-size: 0.7rem;
+    }
+
+    /* Footer */
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media (min-width:1446px) and (max-width:1920px) {
+    /* footer */
+    .copyright .p1{
+        margin-left: 315px !important;
+    }
+
+    .copyright .p2{
+        margin-right: 355px !important;
+    }
+    
+}

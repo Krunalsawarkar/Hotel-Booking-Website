@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxuria Hotel - in your hospitality</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="16x16">
+
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- My File CSS -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+
+    <!-- Navbar Section -->
+    <header class="header_wrapper">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand navbrand" href="#">
+                    <img src="assets/images/Logo.png" class="img-fluid logo" width="145px" alt="logo">
+                </a>
+
+                <button class="navbar-toggler bars" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars bars "></i>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#rooms">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prices">Prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <!-- <li class="nav-item mt-3 mt-lg-0">
+                        <a class="main-btn" href="#">Book Now</a>
+                    </li> -->
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div id="home" class="banner_wrapper">
+        <div class="video-container">
+            <div class="video">
+                <video autoplay loop muted plays-inline class="onvideo"
+                    src="assets/videos/km_Dubai Luxuria_1440p_30f_20230414_120705.mp4">
+                </video>
+            </div>
+            <div class="video-overlay">
+                <h1>Welcome to LUXURIA</h1>
+                <p>Stay in our PARADISE, experience the beauty of LUXURIA and explore DUBAI.</p>
+                <div class="button-wrapper">
+                    <div class="d-flex justify-content-center gap-3">
+                        <button class="btn btn-primary btn-lg md-btn-sm main-btn" type="button">EXPLORE US</button>
+                        <button class="btn btn-primary btn-lg md-btn-sm main-btn" type="button">BOOK NOW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="booking-container">
+            <div class="container booking-area">
+                <form class="row">
+                    <div class="col-lg mb-3 mb-lg-0">
+                        <input type="date" class="form-control" placeholder="Date">
+                    </div>
+                    <div class="col-lg mb-3 mb-lg-0">
+                        <input type="date" class="form-control" placeholder="Date">
+                    </div>
+                    <div class="col-lg mb-3 mb-lg-0">
+                        <select class="form-select">
+                            <option selected>Adults</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-lg mb-3 mb-lg-0">
+                        <select class="form-select">
+                            <option selected>Children</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="col-lg mb-3 mb-lg-0">
+                        <button type="submit" class="main-btn rounded-2 px-lg-3">Check Availability</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about_wrapper">
+        <div class="container">
+            <div class="row flex-lg-row flex-column-reverse">
+
+                <div class="col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/pexels-amar-saleem-70441.jpg" class="d-block w-100" alt="img1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/pexels-mikhail-nilov-7820376.jpg" class="d-block w-100"
+                                    alt="img2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/pexels-taryn-elliott-4112236.jpg" class="d-block w-100"
+                                    alt="img3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev prevbutton" type="button"
+                            data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next nextbutton" type="button"
+                            data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start story">
+                    <h3>Exploring <span>LUXURIA !</span> <br>
+                        Read Our <span>STORY .</span></h3>
+                    <p>Experience the epitome of luxury at Luxuria, a 5-star hotel located in the heart of Dubai.
+                        Boasting breathtaking views of the city skyline and the Arabian Gulf, our opulent
+                        accommodations, world-class dining options, and exceptional amenities are designed to create an
+                        unforgettable experience for our guests. Whether you're here for business or leisure, our
+                        dedicated staff are committed to providing you with the highest level of service and
+                        hospitality, ensuring your stay is nothing short of extraordinary.</p>
+                    <p>Luxuria boasts a range of world-class amenities, including fine dining restaurants, a relaxing
+                        spa, and state-of-the-art fitness facilities, providing guests with a truly unforgettable
+                        experience. The hotel's commitment to exceptional service and attention to detail make it a top
+                        choice for those seeking a luxurious stay in the heart of Dubai.</p>
+                    <a href="#" class="main-btn mt-4">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms_wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h1>Luxurious <span>Accomodation</span></h1>
+                    <h5>Discover Our Exquisite Room Collection for a Truly Memorable Stay</h5>
+                </div>
+                <div class="row m-0">
+                    <div class="col-md-4 mb-4 mb-lg-0 custom-col">
+                        <div class="room-items">
+                            <img src="assets/images/roomimg1.webp" class="img-fluid ">
+                            <div class="room-item-wrap">
+                                <div class="room-content text-center">
+                                    <h5 class="text-white mb-lg-5 text-center">Royal Suit</h5>
+                                    <p class=" text-center">The Royal Suit Room of Luxuria Hotel is a luxurious and
+                                        spacious room that provides guests with the ultimate in comfort and
+                                        sophistication.</p>
+                                    <p class=" fw-bold mt-lg-4 mt-md-3 text-center rate">$250 / Per Night</p>
+                                    <a class="main-btn border-white text-white mt-lg-5 text-center" href="#">Book
+                                        now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-lg-0 custom-col">
+                        <div class="room-items">
+                            <img src="assets/images/roomimg2.webp" alt="" class="img-fluid room-image">
+                            <div class="room-item-wrap">
+                                <div class="room-content text-center">
+                                    <h5 class="text-white mb-lg-5 text-center">Luxuria Suit</h5>
+                                    <p class=" text-center">The Luxuria Hotel's special suite rooms are a luxurious and
+                                        opulent escape for discerning travelers. These exclusive suites boast lavish
+                                        furnishings, high-end amenities, and stunning city or ocean views.</p>
+                                    <p class=" fw-bold mt-lg-4 mt-md-3 text-center rate">$200 / Per Night</p>
+                                    <a class="main-btn border-white text-white mt-lg-5 text-center" href="#">Book
+                                        now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-lg-0 custom-col">
+                        <div class="room-items">
+                            <img src="assets/images/roomimg3.webp" alt="" class="img-fluid room-image">
+                            <div class="room-item-wrap">
+                                <div class="room-content text-center ">
+                                    <h5 class="text-white mb-lg-5 text-center ">Gold Suit</h5>
+                                    <p class=" text-center">The Gold Suite Rooms at Luxuria Hotel are the epitome of
+                                        luxury and indulgence. Designed to cater to the most discerning guests, these
+                                        spacious suites are adorned with opulent luxury.</p>
+                                    <p class=" fw-bold mt-lg-4  mt-md-3 text-center rate">$220 / Per Night</p>
+                                    <a class="main-btn border-white text-white mt-lg-5 " href="#">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h1>Our <span>Exquisite</span> Services</h1>
+                    <h5>Experience an Unforgettable Stay with our impeccable Hospitality.</h5>
+                </div>
+            </div>
+            <div class="row align-items-center service-item-wrap">
+                <div class="col-lg-7 p-lg-0">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="restaurant" role="tabpanel">
+                            <img src="assets/images/Restaurant.webp" alt="Restaurant">
+                        </div>
+                        <div class="tab-pane fade" id="bar" role="tabpanel">
+                            <img src="assets/images/bar.webp" alt="Bar">
+                        </div>
+                        <div class="tab-pane fade" id="spa" role="tabpanel">
+                            <img src="assets/images/Spa.webp" alt="Spa">
+                        </div>
+                        <div class="tab-pane fade" id="swimming" role="tabpanel">
+                            <img src="assets/images/Swimming Pool.webp" alt="Swimming">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 position-relative">
+                    <div class="service-menu-area">
+                        <ul class="nav">
+                            <li>
+                                <a data-bs-toggle="tab" href="#restaurant" class="active">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="assets/images/icons/dish-icon copy.webp" alt="">
+                                    </span>
+                                    <h5>Restaurant</h5>
+                                    <p><span>Experience</span> culinary excellence and indulge in a variety of
+                                        delectable dishes and drinks at our restaurant.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#bar">
+                                    <span class="service-icon">
+                                        <img decoding="async"
+                                            src="assets/images/icons/cocktail-drink-glass-icon copy.webp" alt="">
+                                    </span>
+                                    <h5>Bar & Lounge</h5>
+                                    <p><span>Relax and Chill</span> in our bar and lounge with signature drinks and
+                                        bites at Hotel Luxuria.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#spa">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="assets/images/icons/leaf-line-icon copy.webp" alt="">
+                                    </span>
+                                    <h5>Spa & Health Care</h5>
+                                    <p><span>Rejuvenate </span>your mind, body, and soul at our spa with our luxurious
+                                        treatments, designed to pamper and refresh you.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a data-bs-toggle="tab" href="#swimming">
+                                    <span class="service-icon">
+                                        <img decoding="async" src="assets/images/icons/pool-ladder-icon copy.webp"
+                                            alt="">
+                                    </span>
+                                    <h5>Swimming Pool</h5>
+                                    <p><span>Escape </span>the heat and dive into our refreshing swimming pool,
+                                        surrounded by stunning views and lush surroundings.</p>
+                                </a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="counter mt-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count1"></span>k+
+                        </h1>
+                        <p>Smiling Tourists</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count2"></span>k+
+                        </h1>
+                        <p>New Memberships</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count3"></span>k+
+                        </h1>
+                        <p>Happiness in Stars</p>
+                    </div>
+                    <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                        <h1>
+                            <span id="count4"></span>k+
+                        </h1>
+                        <p>Served Breakfast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h1>Our <span>Elegant</span> Gallery</h1>
+                    <h5>A Visual Journey Through Luxuria Hotel </h5>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-stretch justify-content-center">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/outer1.webp" class="card-img-top" alt="Image 1">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/outer2.webp" class="card-img-top" alt="Image 2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/cafe.webp" class="card-img-top" alt="Image 3">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/swimming1.webp" class="card-img-top" alt="Image 4">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/swimming2.webp" class="card-img-top" alt="Image 5">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/reception.webp" class="card-img-top" alt="Image 6">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/restaurant1.webp" class="card-img-top" alt="Image 7">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/restaurant2.webp" class="card-img-top" alt="Image 8">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/bar.webp" class="card-img-top" alt="Image 9">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/bed1.webp" class="card-img-top" alt="Image 10">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/bed2.webp" class="card-img-top" alt="Image 11">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card custom-card">
+                                <img src="assets/images/Gallery/lobby1.webp" class="card-img-top" alt="Image 12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="prices" class="price_wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h1>Affordable <span>Luxury</span> Prices</h1>
+                    <h5>Discover Our Price Range and Packages for Affordable Luxury.</h5>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 md-6 mb-4">
+                        <div class="card p-4 text-center rounded-3">
+                            <h3>Economic</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>Flight Ticket (2)</p>
+                                </li>
+                                <li>
+                                    <p>Gold Suit (30% Off)</p>
+                                </li>
+                                <li>
+                                    <p>Restaurant & Bar (Snacks)</p>
+                                </li>
+                                <li>
+                                    <p>Spa and Health Care (Face Make)</p>
+                                </li>
+                            </ul>
+                            <hr />
+                            <h3>$150 <sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                            <a href="#" class="main-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-6 mb-4">
+                        <div class="card p-4 text-center rounded-3">
+                            <h3>Premier</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>Flight Ticket (4)</p>
+                                </li>
+                                <li>
+                                    <p>Premier Suit (10% Off)</p>
+                                </li>
+                                <li>
+                                    <p>Restaurant & Bar (& Breakfast)</p>
+                                </li>
+                                <li>
+                                    <p>Spa and Health Care (Full Services)</p>
+                                </li>
+                            </ul>
+                            <hr />
+                            <h3>$200 <sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                            <a href="#" class="main-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-6 mb-4">
+                        <div class="card p-4 text-center rounded-3">
+                            <h3>Luxury</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>Flight Ticket (4)</p>
+                                </li>
+                                <li>
+                                    <p>Luxury Suit (20% Off)</p>
+                                </li>
+                                <li>
+                                    <p>Restaurant & Bar (Full Services)</p>
+                                </li>
+                                <li>
+                                    <p>Spa and Health Care (Full Services)</p>
+                                </li>
+                            </ul>
+                            <hr />
+                            <h3>$250 <sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                            <a href="#" class="main-btn">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 md-6 mb-4">
+                        <div class="card p-4 text-center rounded-3">
+                            <h3>Royal</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>Flight Ticket (Input Members)</p>
+                                </li>
+                                <li>
+                                    <p>Royal Suit (No Off)</p>
+                                </li>
+                                <li>
+                                    <p>Restaurant & Bar (Full Services)</p>
+                                </li>
+                                <li>
+                                    <p>Spa and Health Care (Full Services)</p>
+                                </li>
+                            </ul>
+                            <hr />
+                            <h3>$400 <sub class="fs-6 fw-normal">/NIGHT</sub></h3>
+                            <a href="#" class="main-btn">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog_wrapper pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center mb-5">
+                    <h1><span>Checking</span> In!</h1>
+                    <h5> A Guide to Memorable Stays at Our Hotel</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img src="assets/images/blog1.webp" alt="">
+                        <div class="blog-content bg-white p-4">
+                            <h5 class="mb-4">Behind The Scene</h5>
+                            <h6>By Admin - January 2022</h6>
+                            <p class="mt-2">Get an insider's look at the people and processes that make your stay at our
+                                hotel a memorable experience.</p>
+                            <a href="#" class="main-btn mt-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card p-0 border-0 rounded-0">
+                        <img src="assets/images/blog2.webp" alt="">
+                        <div class="blog-content bg-white p-4">
+                            <h5 class="mb-4">Destination Guide</h5>
+                            <h6>By Admin - January 2022</h6>
+                            <p class="mt-2">Discover the best local attractions, events, and dining options with our
+                                comprehensive destination guides.</p>
+                            <a href="#" class="main-btn mt-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="our-partner-slider mt-5">
+            <div class="col-sm-12 text-center mb-5">
+                <h5>Our Partners</h5>
+            </div>
+            <div class="container swiper our-partner">
+                <div class=" swiper-wrapper">
+                    <div class="swiper-slide"><img decoding="async" src="assets/images/partners_brand/brand1.webp">
+                    </div>
+                    <div class="swiper-slide"><img decoding="async" src="assets/images/partners_brand/brand2.webp">
+                    </div>
+                    <div class="swiper-slide"><img decoding="async" src="assets/images/partners_brand/brand3.webp">
+                    </div>
+                    <div class="swiper-slide"><img decoding="async" src="assets/images/partners_brand/brand4.webp">
+                    </div>
+                    <div class="swiper-slide"><img decoding="async" src="assets/images/partners_brand/brand5.webp">
+                    </div>
+                    <div class="swiper-slide"><img decoding="async" src="assets/images/partners_brand/brand6.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0 pb-0">
+        <div class="container pb-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <h5>Hotel Location</h5>
+                    <p class="ps-0">We are located in the heart of Dubai, our branches are about to going open in different section of dubai and Saudi.</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> Sheikh Zayed Road, Dubai, United Arab Emirates</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>luxuriahoteldubai@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mx-auto">
+                    <h5>More Links</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Office</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Our Store</a></li>
+                        <li><a href="#">Guarantee</a></li>
+                        <li><a href="#">Buy Gift Card</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="Enter your email here">
+                        <button type="submit" class="main-btn rounded-2 mt-3 border-white text-white">Subscribe</button>
+                    </div>
+                    <h5>Stay Connected</h5>
+                    <ul class="social-network d-flex align-items-center p-0">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright justify-content-between align-items-center">
+            <div class="col-auto">
+              <p class="mx-5 mb-0 p-0 p1">Copyright <a href="#">© LUXURIA HOTEL</a> All Rights Reserved</p>
+            </div>
+            <div class="col-auto text-md-right justify-content-md-end">
+              <p class="mx-5 mb-0 p-0 p2">Made With <a href="#">♥ By Krunal Sawarkar</a></p>
+            </div>
+          </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/app.js"></script>
+
+</body>
+
+</html>
